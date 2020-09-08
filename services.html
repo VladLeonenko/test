@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="servicesPage">
+
+<header>
+    <div class="container">
+        <div class="header_block">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo1.png" alt="ecoscript.logo"></a>
+            </div>
+
+            <nav class="burger_menu_nav">
+                <a id="close" onclick="closeMenu()">&times</a>
+                <ul class="menu__list r-list">
+                    <li class="menu__group"><a href="index.html" >Главная</a></li>
+                    <li class="menu__group"><a href="services.html" >Услуги</a></li>
+                    <li class="menu__group"><a href="portfolio.html" >Портфолио</a></li>
+                    <li class="menu__group"><a href="contacts.html" >Контакты</a></li>
+                </ul>
+
+            </nav>
+            <nav class="menu_nav">
+                <div class="nav">
+                    <ul class="menu__list r-list">
+                        <li class="menu__group"><a href="index.html" >Главная</a></li>
+                        <li class="menu__group"><a href="services.html" >Услуги</a></li>
+                        <li class="menu__group"><a href="portfolio.html" >Портфолио</a></li>
+                        <!--<li class="menu__group"><a href="blog.html" >Блог</a></li>-->
+                        <li class="menu__group"><a href="contacts.html" >Контакты</a></li>
+
+                    </ul>
+                </div>
+                <a href="#" id="burgerMenu" class="mobileMenu" onclick="menuFunction()">&#9776;</a>
+            </nav>
+
+        </div>
+    </div>
+</header>
+
+.
+
+
+
+<section class="sixStep">
+    <div class="container" id="containerForSteps">
+        <div class="numberOfStep">
+            <button class="nextStep" onclick="plusStepSlide(); changeNumber()"><img src="img/up.png" alt="chevron up"></button>
+            <span id="numeral">1</span>
+            <button class="prevStep" onclick="minusStepSlide(); changeNumber()"><img src="img/down.png" alt="chevron down"></button>
+        </div>
+
+        <div class="explanations">
+            <div class="stepWrapper">
+                <div class="developStep">
+                    <h2>Определится с выбором платформы и типом сайта</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aut culpa ex ipsum minus nobis praesentium reiciendis temporibus.
+                        Impedit, molestias totam! Ad aut dignissimos eius labore, obcaecati
+                        praesentium quae repellat voluptates.</p>
+                </div>
+            </div>
+            <div class="stepWrapper">
+                <div class="developStep" id="secondStepContext">
+                    <h2>Выбрать имя компании, цветовую схему, определится с обязательными блоками</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aut culpa ex ipsum minus nobis praesentium reiciendis temporibus.
+                        Impedit, molestias totam! Ad aut dignissimos eius labore, obcaecati
+                        praesentium quae repellat voluptates.</p>
+                </div>
+            </div>
+            <div class="stepWrapper">
+                <div class="developStep">
+                    <h2>Утверждение макета сайта с веб-дизайнером</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aut culpa ex ipsum minus nobis praesentium reiciendis temporibus.
+                        Impedit, molestias totam! Ad aut dignissimos eius labore, obcaecati
+                        praesentium quae repellat voluptates.</p>
+                </div>
+            </div>
+            <div class="stepWrapper">
+                <div class="developStep">
+                    <h2>вёрстка и программирование сайта</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aut culpa ex ipsum minus nobis praesentium reiciendis temporibus.
+                        Impedit, molestias totam! Ad aut dignissimos eius labore, obcaecati
+                        praesentium quae repellat voluptates.</p>
+                </div>
+            </div>
+            <div class="stepWrapper">
+                <div class="developStep">
+                    <h2>Установка сайта на хостинг, настройки сео , проверка сайта </h2>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aut culpa ex ipsum minus nobis praesentium reiciendis temporibus.
+                        Impedit, molestias totam! Ad aut dignissimos eius labore, obcaecati
+                        praesentium quae repellat voluptates.</p>
+                </div>
+            </div>
+            <div class="stepWrapper">
+                <div class="developStep">
+                    <h2>Запуск сайта ,продвижение,поддержка</h2>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aut culpa ex ipsum minus nobis praesentium reiciendis temporibus.
+                        Impedit, molestias totam! Ad aut dignissimos eius labore, obcaecati
+                        praesentium quae repellat voluptates.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<section id="calculetePrice">
+    <div class="container">
+        <form>
+            <section class="calculator">
+
+                <h2 style="margin-bottom: 50px">Калькулятор стоимости сайта</h2>
+
+
+                <div class="servicesContainer">
+
+
+                        <div class="siteType">
+                            <div class="firstOfSiteType">
+                                <h2>Тип сайта</h2>
+                                <input class="state" type="radio" id="landing" name="site_type"/>
+                                <label class="label" for="landing">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">landing</span>
+                                </label>
+                            </div>
+                            <div class="secondOfSiteType">
+                                <input class="state" type="radio" id="corporate" name="site_type"/>
+                                <label class="label" for="corporate">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">Корпоративный сайт</span>
+                                </label>
+                            </div>
+                            <div class="thirdOfSiteType">
+                                <input class="state" type="radio" id="ishop" name="site_type"/>
+                                <label class="label" for="ishop">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">Интернет-магазин</span>
+                                </label>
+                            </div>
+                        </div>
+
+
+
+                        <div class="platformType">
+                        <h2>Тип платформы</h2>
+                            <div class="firstOfPlatformType">
+                                <input class="state" type="radio" id="Tilda" name="platform_name"/>
+                                <label class="label" for="Tilda">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">Tilda</span>
+                                </label>
+                            </div>
+                            <div class="secondOfPlatformType">
+                                <input class="state" type="radio" id="WordPress" name="platform_name"/>
+                                <label class="label" for="WordPress">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">WordPress</span>
+                                </label>
+                            </div>
+                            <div class="thirdOfPlatformType">
+                                <input class="state" type="radio" id="CleanCode" name="platform_name"/>
+                                <label class="label" for="CleanCode">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">CleanCode</span>
+                                </label>
+                            </div>
+                        </div>
+
+
+
+                        <div class="webDesign">
+                        <h2>Web-design</h2>
+                            <div class="firstOfWebDesign">
+                                <input class="state" type="radio" id="StandartDesign" name="webDes"/>
+                                <label class="label" for="StandartDesign">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">Standart</span>
+                                </label>
+                            </div>
+                            <div class="secondOfWebDesign">
+                                <input class="state" type="radio" id="OptimalDesign" name="webDes"/>
+                                <label class="label" for="OptimalDesign">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">Optimal</span>
+                                </label>
+                            </div>
+                            <div class="thirdOfWebDesign">
+                                <input class="state" type="radio" id="PrimeDesign" name="webDes"/>
+                                <label class="label" for="PrimeDesign">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">Prime</span>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="seo">
+                        <h2>SEO</h2>
+                            <div class="firstOfSeo">
+                                <input class="state" type="radio" id="StandartSeo" name="seo"/>
+                                <label class="label" for="StandartSeo">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">Standart</span>
+                                </label>
+                            </div>
+                            <div class="secondOfSeo">
+                                <input class="state" type="radio" id="OptimalSeo" name="seo"/>
+                                <label class="label" for="OptimalSeo">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">Optimal</span>
+                                </label>
+                            </div>
+                            <div class="thirdOfSeo">
+                                <input class="state" type="radio" id="PrimeSeo" name="seo"/>
+                                <label class="label" for="PrimeSeo">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">Prime</span>
+                                </label>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="backend">
+                            <h2>Backend</h2>
+                            <div class="firstOfBackend">
+                                <input class="state" type="radio" id="StandartBackend" name="back"/>
+                                <label class="label" for="StandartBackend" name="back">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">Standart</span>
+                                </label>
+                            </div>
+                            <div class="secondOfBackend">
+                                <input class="state" type="radio" id="OptimalBackend" name="back"/>
+                                <label class="label" for="OptimalBackend">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">Optimal</span>
+                                </label>
+                            </div>
+                            <div class="thirdOfBackend">
+                                <input class="state" type="radio" id="PrimeBackend" name="back"/>
+                                <label class="label" for="PrimeBackend">
+                                    <div class="indicator"></div>
+                                    <span class="textTest">Prime</span>
+                                </label>
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+            <section class="resultCalc">
+                <span id="out">0.0</span>
+                <span class="rub">₽</span>
+                <div class="myBtn">
+                <input type="button" name="adress" id="btn" class="btn-block btn btn-primary" value="Считать"/>
+</div>
+
+            </section>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="footerMenu">
+            <div class="brif">
+                <h3>Услуги</h3>
+                <ul>
+                    <li>Разработка корпоративного сайта</li>
+                    <li>Разработка сайта на WordPress</li>
+                    <li>Разработка Landing page</li>
+                    <li>Редизайн сайта</li>
+                    <li>Раскрутка сайта</li>
+                    <li>Анализ сайта</li>
+                </ul>
+            </div>
+            <div class="development">
+                <h3>О нас</h3>
+                <ul>
+                    <li>Отзывы</li>
+                    <li>Блог</li>
+                    <li>Вакансии</li>
+                    <li>Сотрудничество</li>
+                    <li>Курсы</li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <h3>Контакты</h3>
+                <ul>
+                    <li>+7 (999) 984-91-07</li>
+                    <li>sfdfdgdsg@mail.ru</li>
+                    <li>Наши соц сети</li>
+                </ul>
+            </div>
+        </div>
+        <div class="icon">
+            <div class="company">
+                &#174 <p>ecoScript</p>
+                <h5>2019-2020 Разработка и создание сайтов</h5>
+            </div>
+            <div class="social_icons">
+                <a href="#"><img src="img/vk.com.png" alt="vk" width="46px"></a>
+                <a href="#"><img src="img/instagram.png" alt="instagram" width="46px"></a>
+                <a href="#"><img src="img/facebook.png" alt="facebook" width="46px"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!--<script src="js/stepsCarousel.js"></script>-->
+<script src="js/priceCalc.js"></script>
+<script src="js/burgerMenu.js"></script>
+<script src="js/algoritm.js"></script>
+</body>
+</html>

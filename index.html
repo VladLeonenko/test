@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Creative</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+	<div class="container">
+		<div class="header_block">
+			<div class="logo">
+				<a href="index.html"><img src="img/logo1.png" alt="ecoscript.logo"></a>
+			</div>
+
+			<nav class="burger_menu_nav">
+				<a id="close" onclick="closeMenu()">&times</a>
+				<ul class="menu__list r-list">
+					<li class="menu__group"><a href="index.html" >Главная</a></li>
+					<li class="menu__group"><a href="services.html" >Услуги</a></li>
+					<li class="menu__group"><a href="portfolio.html" >Портфолио</a></li>
+					<li class="menu__group"><a href="contacts.html" >Контакты</a></li>
+				</ul>
+
+			</nav>
+			<nav class="menu_nav">
+					<div class="nav">
+						<ul class="menu__list r-list">
+							<li class="menu__group"><a href="index.html" >Главная</a></li>
+							<li class="menu__group"><a href="services.html" >Услуги</a></li>
+							<li class="menu__group"><a href="portfolio.html" >Портфолио</a></li>
+							<!--<li class="menu__group"><a href="blog.html" >Блог</a></li>-->
+							<li class="menu__group"><a href="contacts.html" >Контакты</a></li>
+
+						</ul>
+					</div>
+					<a href="#" id="burgerMenu" class="mobileMenu" onclick="menuFunction()">&#9776;</a>
+				</nav>
+
+		</div>
+	</div>
+</header>
+
+
+<canvas></canvas>
+
+<section class="first_block">
+	<div class="iconsBlock">
+		<img src="img/vk.com.png" alt="" width="62px">
+		<img src="img/instagram.png" alt="" width="62px">
+		<img src="img/facebook.png" alt="" width="62px">
+	</div>
+
+	<div class="container">
+		<div class="first_wrapper">
+			<div class="description" >
+				<h1>ПРЕВРАЩАЕМ ВАШИ ИДЕИ В ПРИБЫЛЬНЫЕ ПРОЕКТЫ</h1>
+				<p>Узнать цену за стоимость сайта/приложения/интернет магазина займёт у Вас не больше полу часа.
+					Если вы точно знаете чего хотите, у вас есть макет и вам нужна вёрстка, для Вас мы мы рассписали цену за 1 веб страницу. </p>
+			</div>
+			<div class="scroll_boxes">
+				<div class="contact_us" >
+					<a href=""><img src="img/convert.png" alt="convert"></a>
+					<p>СВЯЗАТСЯ С НАМИ</p>
+				</div>
+				<a href="services.html"><div class="services ">
+					<a href=""><img src="img/price1.png" alt="price"></a>
+					<p>СТОИМОСТЬ УСЛУГ</p>
+				</div></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+<section class="quiz">
+<!--	<img src="img/lamp.png" alt="" id="animationLamp">-->
+	<div class="container" id="quizSlider">
+
+		<div class="quiz_header">
+			<button class="quizStep quiz_margin" onclick="thisSlide(1)">Landing page</button>
+			<button class="quizStep" onclick="thisSlide(2)">Корпоративный сайт</button>
+			<button class="quizStep" onclick="thisSlide(3)">Интеренет-магазин</button>
+			<button class="quizStep" onclick="thisSlide(4)">Выбор платформы</button>
+		</div>
+
+		<div class="slides">
+			<div class="something">
+				<div class="steps">
+					<h2>Landing page</h2>
+					<div class="contextSlide">
+						<img src="img/phone.png" alt="iphone 11" >
+						<p class="describeStep">Тут я расскажу что это и для чего это. Расскажу очень много и всё что смогу, а лучше всего, если в этом мне поможет так званная Анастасия Грикель</p>
+
+					</div>
+				</div>
+			</div>
+			<div class="something">
+				<div class="steps">
+					<h2>Корпоративный сайт</h2>
+					<div class="contextSlide">
+						<img src="img/macBook.png" alt="macbook pro retina 16" width="600px">
+						<p class="describeStep">Тут я расскажу что это и для чего это. Расскажу очень много и всё что смогу, а лучше всего, если в этом мне поможет так званная Анастасия Грикель</p>
+
+					</div>
+				</div>
+			</div>
+			<div class="something">
+				<div class="steps">
+					<h2>Интернет-магазин</h2>
+					<div class="contextSlide">
+						<img src="img/iPad.png" alt="ipad" >
+						<p class="describeStep">Тут я расскажу что это и для чего это. Расскажу очень много и всё что смогу, а лучше всего, если в этом мне поможет так званная Анастасия Грикель</p>
+
+					</div>
+				</div>
+			</div>
+			<div class="something">
+				<div class="steps">
+					<h2>Выбор платформы</h2>
+					<div class="contextSlide">
+						<img src="img/platform.png" alt="" >
+						<p class="describeStep">Тут я расскажу что это и для чего это. Расскажу очень много и всё что смогу, а лучше всего, если в этом мне поможет так званная Анастасия Грикель</p>
+
+					</div>
+				</div>
+			</div>
+	     </div>
+	</div>
+</section>
+
+<section id="slider_wrapper">
+	<div class="container">
+		<h2 id="dinamicText"></h2>
+		<div class="slider">
+			<div class="item">
+				<div class="slide">
+					<p>`01</p>
+					<div class="first_text">
+						<h4>Возьмём заполнения брифов на себя</h4>
+						<p>Мы не оставим вас в трудную минуту, сделаем ТЗ и брифы вместе с вами.
+							Первым шагом на пути к финишу - является знакомство.
+							Изучение Вашего бизнеса, конкурентов и целевой аудитории поможет нам выстроить правильный алгоритм работы</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="slide">
+					<p>`02</p>
+					<div class="second_text">
+						<h4>Возьмём заполнения брифов на себя</h4>
+						<p>Мы не оставим вас в трудную минуту, сделаем ТЗ и брифы вместе с вами.
+							Первым шагом на пути к успешному проекту - является знакомство.
+							Изучение Вашего бизнеса, конкурентов и целевой аудитории поможет нам выстроить правильный алгоритм работы</p>
+					</div>
+				</div>
+			</div>
+
+			<a class="prev" onclick="minusSlide()">&#10094;</a>
+			<a class="next" onclick="plusSlide()">&#10095;</a>
+			<div class="slider-dots">
+				<span class="slider-dots_item" onclick="currentSlide(1)"></span>
+				<span class="slider-dots_item" onclick="currentSlide(2)"></span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--<section class="algoritm">-->
+<!--	<div class="algoritmsButton">-->
+<!--		<button class="punkt">1</button>-->
+<!--		<button class="punkt">2</button>-->
+<!--		<button class="punkt">3</button>-->
+<!--		<button class="punkt">4</button>-->
+<!--	</div>-->
+<!--	<div class="algoritmAsk">-->
+<!--		<div class="firstquestion">-->
+<!--			<p>How are you?</p>-->
+<!--		</div>-->
+<!--		<div class="firstquestion">-->
+<!--			<p>it is true that you like my ass?</p>-->
+<!--		</div>-->
+<!--		<div class="firstquestion">-->
+<!--			<p>What is your name?</p>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div class="algoritmResult">-->
+<!--		<button class="algResult" id="algoritmResult">Click me</button>-->
+<!--		<span id="outAlgoritm">aaa</span>-->
+<!--	</div>-->
+<!--</section>-->
+
+<section>
+	<div class="container">
+		<div class="portfolio_block">
+			<img src="img/internet-shop.png" alt="" id="foto1">
+			<img src="img/internet-shop2.png" alt="" id="foto2">
+			<img src="img/internet-shop3.png" alt="" id="foto3">
+			<img src="img/lendingsocial.png" alt="" id="foto4">
+			<img src="img/design_page.png" alt="" id="foto5">
+			<img src="img/Без%20имени.png" alt="" id="foto6" height="150px">
+		</div>
+	</div>
+</section>
+
+<div id="ourServeces">
+	<div class="container">
+		<div class="attantion"></div>
+		 <h2>Обратившись к нам, вы получите:</h2>
+		<div class="exampels">
+			<div class="firstblock">
+				<h4>Скорость реализации проекта</h4>
+			</div>
+			<div class="secondblock"></div>
+			<div class="tirthblock">
+				<h4>Прирост клиентов и дохода</h4>
+			</div>
+			<div class="fourthblock"></div>
+			<div class="fifthblock"></div>
+			<div class="sixthblock">
+				<h4>Гарантия выполнения заказа</h4>
+			</div>
+			<div class="seventhblock"></div>
+			<div class="eighthblock">
+				<h4>Поддержка наших клиентов</h4>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+
+<footer>
+<div class="container">
+		<div class="footerMenu">
+			<div class="brif">
+				<h3>Услуги</h3>
+				<ul>
+					<li>Разработка корпоративного сайта</li>
+					<li>Разработка сайта на WordPress</li>
+					<li>Разработка Landing page</li>
+					<li>Редизайн сайта</li>
+					<li>Раскрутка сайта</li>
+					<li>Анализ сайта</li>
+				</ul>
+			</div>
+			<div class="development">
+				<h3>О нас</h3>
+				<ul>
+					<li>Отзывы</li>
+					<li>Блог</li>
+					<li>Вакансии</li>
+					<li>Сотрудничество</li>
+					<li>Курсы</li>
+				</ul>
+			</div>
+			<div class="contacts">
+				<h3>Контакты</h3>
+				<ul>
+					<li>+7 (999) 984-91-07</li>
+					<li>sfdfdgdsg@mail.ru</li>
+					<li>Наши соц сети</li>
+				</ul>
+			</div>
+		</div>
+		<div class="icon">
+			<div class="company">
+				&#174 <p>ecoScript</p>
+				<h5>2019-2020 Разработка и создание сайтов</h5>
+			</div>
+			<div class="social_icons">
+				<a href="#"><img src="img/vk.com.png" alt="vk" width="48"></a>
+				<a href="#"><img src="img/instagram.png" alt="instagram" width="48"></a>
+				<a href="#"><img src="img/facebook.png" alt="facebook" width="48"></a>
+			</div>
+		</div>
+</div>
+</footer>
+
+
+<script src="js/animateFon.js"></script>
+<script src="js/textScript.js"></script>
+<script src="js/textSlider.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js"></script>
+<script src="js/stars.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/burgerMenu.js"></script>
+<script src="js/algoritm.js"></script>
+
+<!--<script src="//code.jivosite.com/widget/UJN4qWjDSb" async></script>-->
+</body>
+</html>
