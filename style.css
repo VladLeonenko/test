@@ -821,12 +821,12 @@ footer	{
 
 }
 .nextStep{
-	max-height: 50px;
+	max-height: 48px;
 	border: none;
 	outline: none;
 }
 .prevStep{
-	max-height: 50px;
+	max-height: 48px;
 	border: none;
 	outline: none;
 }
@@ -1136,6 +1136,9 @@ input[type="radio"] {
 	}
 	.siteType{
 		padding-right: 0;
+	}
+	.developStep{
+		padding-left: 5px;
 	}
 }
 
